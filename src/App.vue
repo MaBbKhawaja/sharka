@@ -24,4 +24,8 @@ export default {
 };
 </script>
 
-<style></style>
+<style>
+.q-page-container {
+  width: 1140px !important;
+}
+</style>

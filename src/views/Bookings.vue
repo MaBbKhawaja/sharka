@@ -3,8 +3,8 @@
     <div class="mt-48">
       <Breadcrumbs />
     </div>
-    <div>
-      <div class="main-column">
+    <div class="row">
+      <div class="float-left main-column">
         <div class="toggle-row mt-48">
           <div class="w-255">
             <SToggle v-model="mode" :options="modeOptions" color="secondary" />
@@ -22,8 +22,53 @@
             <template v-slot:content>
               <SailingSchedule />
             </template>
+            <template v-slot:footer>
+              <STabs>
+                <STab name="Pricing Breakdown">
+                  <div class="p-32">What we do</div>
+                </STab>
+                <STab name="Route Details &amp; Deadlines">
+                  <div class="p-32">How much we do it for</div>
+                </STab>
+                <STab name="Demurage &amp; Detention">
+                  <div class="p-32">Why we do it</div>
+                </STab>
+                <STab name="Terms &amp; Conditions">
+                  <div class="p-32">Why we do it</div>
+                </STab>
+              </STabs>
+            </template>
           </SCard>
         </div>
+        <div class="float-left mt-48 main-column">
+          <div>
+            <SAccordion>
+              <template v-slot:title>
+                <div class="width-100">
+                  <div class="float-left">
+                    <span style="text-align:left">Tab Group</span>
+                  </div>
+                </div>
+              </template>
+              <template v-slot:content>Tab Group content</template>
+            </SAccordion>
+          </div>
+          <div>
+            <SAccordion>
+              <template v-slot:title>
+                <div class="width-100">
+                  <div class="float-left">
+                    <span style="text-align:left">Tab Group</span>
+                  </div>
+                </div>
+              </template>
+              <template v-slot:content>Tab Group content</template>
+            </SAccordion>
+          </div>
+        </div>
+      </div>
+      <div class="float-left sidebar">
+        <SummaryCard />
       </div>
     </div>
   </div>
@@ -34,6 +79,10 @@ import Breadcrumbs from "../components/Breadcrumbs";
 import SToggle from "../components/SToggle";
 import SInput from "../components/SInput";
 import SCard from "../components/SCard";
+import STabs from "../components/STabs";
+import STab from "../components/STab";
+import SAccordion from "../components/SAccordion";
+import SummaryCard from "../components/SummaryCard";
 import SailingSchedule from "../components/SailingSchedule";
 export default {
   name: "Bookings",
@@ -42,7 +91,11 @@ export default {
     SToggle,
     SInput,
     SCard,
-    SailingSchedule
+    SailingSchedule,
+    STabs,
+    STab,
+    SAccordion,
+    SummaryCard
   },
   data() {
     return {
@@ -68,5 +121,8 @@ export default {
 }
 .w-255 {
   width: 255px;
+}
+.sidebar {
+  width: 505px;
 }
 </style>

@@ -1,12 +1,10 @@
 <template>
-  <div>
+  <div class="float-left card-bg">
     <slot name="title"></slot>
     <div class="card-body">
       <slot name="content"></slot>
     </div>
-    <slot name="footer">
-      <!-- <div class="card-footer"></div> -->
-    </slot>
+    <slot name="footer"></slot>
   </div>
 </template>
 
@@ -36,5 +34,9 @@ export default {
   border-left: 1px solid #c8c8c8;
   border-right: 1px solid #c8c8c8;
   border-bottom: 1px solid #c8c8c8;
+}
+.card-bg {
+  /* box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.1); */
+  background-color: #ffffff;
 }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="sailing-schedule-container">
+  <div class="sailing-schedule-container float-left">
     <div class="left-column">
       <!-- image only -->
       <img
