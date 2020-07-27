@@ -1,43 +1,26 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header class="bg-primary text-white" height-hint="98">
-      <q-toolbar>
-        <q-toolbar-title>
-          <q-avatar>
-            <img src="https://cdn.quasar.dev/logo/svg/quasar-logo.svg" />
-          </q-avatar>
-          Title
-        </q-toolbar-title>
-      </q-toolbar>
-
-      <q-tabs align="left">
-        <q-route-tab to="/page1" label="Page One" />
-        <q-route-tab to="/page2" label="Page Two" />
-        <q-route-tab to="/page3" label="Page Three" />
-      </q-tabs>
-    </q-header>
-
+    <TopNav />
     <q-page-container>
-      <HelloWorld />
+      <router-view />
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
-
+import TopNav from "./components/TopNav";
 export default {
   name: "LayoutDefault",
 
   components: {
-    HelloWorld,
+    TopNav
   },
 
   data() {
     return {
-      leftDrawerOpen: false,
+      leftDrawerOpen: false
     };
-  },
+  }
 };
 </script>
 

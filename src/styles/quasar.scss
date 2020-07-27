@@ -1,3 +1,96 @@
-@import './quasar.variables.scss';
-@import '~quasar-styl';
+@import "./quasar.variables.scss";
+@import "~quasar-styl";
 // @import '~quasar-addon-styl';
+
+:root {
+    --red: #ff0000;
+    --black: #000000;
+    --black-two: #272727;
+    --greyish-brown: #434343;
+    --brown-grey: #979797;
+    --very-light-pink: #e1e1e1;
+    --white: #f4f4f4;
+}
+h1 {
+    font-family: Roboto;
+    font-size: 48px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: var(--black);
+}
+.Sub-Title {
+    font-family: Dubai;
+    font-size: 30px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    color: #212121;
+}
+body {
+    width: 1440px;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--black);
+    background-color: #e1e1e1;
+}
+.Small-Text {
+    font-family: Roboto;
+    font-size: 10px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.6;
+    letter-spacing: 0.31px;
+    text-align: center;
+    color: var(--black);
+}
+.q-page-container {
+    width: 810px;
+    margin: 0 auto;
+}
+.mt-48 {
+    margin-top: 48px;
+}
+.display-inline-block {
+    display: inline-block;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.float-right {
+    float: right;
+}
+.float-left {
+    float: left;
+}
+.ml-6 {
+    margin-left: 6px;
+}
+.text-right {
+    text-align: right;
+}
+.text-left {
+    text-align: left;
+}
+.mt-14 {
+    margin-top: 14px;
+}
+.mt-19 {
+    margin-top: 19px;
+}
+.ml-8{
+    margin-left: 8px;
+}

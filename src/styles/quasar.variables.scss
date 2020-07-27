@@ -1,8 +1,8 @@
 // It's highly recommended to change the default colors
 // to match your app's branding.
 
-$primary   : #027BE3;
-$secondary : #26A69A;
+$primary   : #ff0000;
+$secondary : #979797;
 $accent    : #9C27B0;
 
 $dark      : #1D1D1D;
@@ -12,4 +12,29 @@ $negative  : #C10015;
 $info      : #31CCEC;
 $warning   : #F2C037;
 
-@import '~quasar-variables-styl'
+@import '~quasar-variables-styl';
+@font-face {
+    font-family: Dubai;
+    src: local(Dubai-Regular),
+      url(./fonts/Dubai-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  }
+@font-face {
+    font-family: Roboto;
+    src: local(Roboto-Regular),
+      url(./fonts/Roboto-Regular.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+  }
+
+  @font-face {
+    font-family: Roboto;
+    src: local(Roboto-Bold),
+      url(./fonts/Roboto-Bold.ttf) format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+  }
