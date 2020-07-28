@@ -49,7 +49,9 @@ export default {
   text-align: end;
 }
 .content {
-  padding: 32px 48px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-top: 48px;
   border: 1px solid var(--very-light-pink);
   position: relative;
 }

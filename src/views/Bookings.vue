@@ -3,7 +3,7 @@
     <div class="mt-48">
       <Breadcrumbs />
     </div>
-    <div class="row  mt-48">
+    <div class="row mt-48">
       <div class="float-left main-column">
         <div class="toggle-row">
           <div class="w-255">
@@ -11,9 +11,10 @@
           </div>
           <div class="ml-30 float-right">
             <SInput
-              v-model="bookingName"
+              v-model="form.bookingName"
               :placeholder="'Booking Name'"
               :iconName="'fa fa-pencil-alt icon'"
+              :error="$v.form.bookingName.$error"
             />
           </div>
         </div>
@@ -50,7 +51,18 @@
                   </div>
                 </div>
               </template>
-              <template v-slot:content>Tab Group content</template>
+              <template v-slot:content>
+                <div>
+                  <p>This is a test accordion component</p>
+                  <p>We will add a form here or anything acc to our requirements</p>
+                  <p>This is a test accordion component</p>
+                  <p>We will add a form here or anything acc to our requirements</p>
+                  <p>This is a test accordion component</p>
+                  <p>We will add a form here or anything acc to our requirements</p>
+                  <p>This is a test accordion component</p>
+                  <p>We will add a form here or anything acc to our requirements</p>
+                </div>
+              </template>
             </SAccordion>
           </div>
         </div>
@@ -72,6 +84,8 @@ import STab from "../components/STab";
 import SAccordion from "../components/SAccordion";
 import SummaryCard from "../components/SummaryCard";
 import SailingSchedule from "../components/SailingSchedule";
+import { required } from "vuelidate/lib/validators";
+
 export default {
   name: "Bookings",
   components: {
@@ -93,8 +107,15 @@ export default {
         { value: "land", label: "Land" },
         { value: "ocean", label: "Ocean" }
       ],
-      bookingName: ""
+      form: {
+        bookingName: ""
+      }
     };
+  },
+  validations: {
+    form: {
+      bookingName: { required }
+    }
   },
   methods: {}
 };
