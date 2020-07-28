@@ -66,7 +66,7 @@ ul {
 }
 li {
   display: inline-block;
-  width: 156.75px;
+  width: 158px;
   padding: 16px;
   font-family: Roboto;
   font-size: 10px;
@@ -78,6 +78,10 @@ li {
   text-align: center;
   color: var(--black);
   cursor: pointer;
+  border-right: 1px solid #ffffff;
+}
+li:last-child {
+  border-right: 0;
 }
 .tabs-details {
   float: left;

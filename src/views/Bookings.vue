@@ -54,13 +54,21 @@
               <template v-slot:content>
                 <div>
                   <p>This is a test accordion component</p>
-                  <p>We will add a form here or anything acc to our requirements</p>
+                  <p>
+                    We will add a form here or anything acc to our requirements
+                  </p>
                   <p>This is a test accordion component</p>
-                  <p>We will add a form here or anything acc to our requirements</p>
+                  <p>
+                    We will add a form here or anything acc to our requirements
+                  </p>
                   <p>This is a test accordion component</p>
-                  <p>We will add a form here or anything acc to our requirements</p>
+                  <p>
+                    We will add a form here or anything acc to our requirements
+                  </p>
                   <p>This is a test accordion component</p>
-                  <p>We will add a form here or anything acc to our requirements</p>
+                  <p>
+                    We will add a form here or anything acc to our requirements
+                  </p>
                 </div>
               </template>
             </SAccordion>
