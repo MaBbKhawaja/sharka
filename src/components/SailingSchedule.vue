@@ -70,7 +70,7 @@ export default {
 }
 .right-column {
   float: right;
-  width: 451px;
+  width: 450px;
 }
 .port-name {
   width: 206px;

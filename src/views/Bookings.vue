@@ -3,9 +3,9 @@
     <div class="mt-48">
       <Breadcrumbs />
     </div>
-    <div class="row">
+    <div class="row  mt-48">
       <div class="float-left main-column">
-        <div class="toggle-row mt-48">
+        <div class="toggle-row">
           <div class="w-255">
             <SToggle v-model="mode" :options="modeOptions" color="secondary" />
           </div>
@@ -53,21 +53,9 @@
               <template v-slot:content>Tab Group content</template>
             </SAccordion>
           </div>
-          <div>
-            <SAccordion>
-              <template v-slot:title>
-                <div class="width-100">
-                  <div class="float-left">
-                    <span style="text-align:left">Tab Group</span>
-                  </div>
-                </div>
-              </template>
-              <template v-slot:content>Tab Group content</template>
-            </SAccordion>
-          </div>
         </div>
       </div>
-      <div class="float-left sidebar">
+      <div class="float-right sidebar">
         <SummaryCard />
       </div>
     </div>
@@ -123,6 +111,6 @@ export default {
   width: 255px;
 }
 .sidebar {
-  width: 505px;
+  width: 475px;
 }
 </style>

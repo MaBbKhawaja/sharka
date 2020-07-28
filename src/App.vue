@@ -26,6 +26,16 @@ export default {
 
 <style>
 .q-page-container {
-  width: 1140px !important;
+  width: 1110px !important;
+}
+.q-layout {
+  width: 1440px !important;
+  margin: 0 auto;
+}
+.q-header {
+  width: 100%;
+  /* margin: 0 auto; */
+  background-color: #ffffff;
+  box-shadow: 0 0 50px 0 var(--very-light-pink);
 }
 </style>
