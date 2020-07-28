@@ -26,8 +26,8 @@ const routes = [
       },
       {
         path: "/",
-        name: "Bookings",
-        component: () => import("../views/Bookings.vue")
+        name: "Home",
+        component: () => import("../views/Home.vue")
       },
       {
         path: "/bookings",
@@ -39,7 +39,7 @@ const routes = [
 ];
 
 const router = new VueRouter({
-  mode: "history",
+  mode: "hash",
   base: process.env.BASE_URL,
   routes
 });

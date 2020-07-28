@@ -91,7 +91,7 @@ export default {
 
   methods: {
     confirmBooking() {
-      console.log("CONFIRM");
+      // console.log("CONFIRM");
     }
   },
   components: {
